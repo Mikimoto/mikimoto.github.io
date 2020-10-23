@@ -145,4 +145,4 @@ Github Action 在 Deploy 時會幫你建立 gh-pages 並把產生於 ./public �
 
 最後不要忘記到  repository 的設定裡面把 Github Pages 功能打開並對應到 gh-pages 的 branch。
 
-如果上述步驟都成功，你應該可以連線到 httos:// < username > .github.io 去看看自己的成果。
+如果上述步驟都成功，你應該可以連線到 https:// < username > .github.io 去看看自己的成果。
