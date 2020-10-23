@@ -74,7 +74,75 @@ hugo server
 開啟瀏覽器 http://localhost:1313/
 
 ## 部署到 Github ##
+Github 支援使用每一個帳號有一個專屬的 Github Page，部署到 Github 上有兩種方式：
+* User/Organization Pages (https://<USERNAME|ORGANIZATION>.github.io/)
+* Project Pages (https://<USERNAME|ORGANIZATION>.github.io/<PROJECT>/)
 
-> 工步他始能詩的，裝進分星海演意學值例道……於財型目古香亮自和這乎？化經溫詩。只賽嚴大一主價世哥受的沒有中年即病行金拉麼河。主小路了種就小為廣不？
+我們以 User Pages 的方式說明:
 
-*From [亂數假文產生器 - Chinese Lorem Ipsum](http://www.richyli.com/tool/loremipsum/)*
+### 建立 repository ###
+請先建立 < your username >/ < your username >.github.io 這個 repository 當作你帳號的專屬頁面
+
+p.s. 你的 theme 如果是 clone 來的，建議另外用 submodule 掛上去
+
+### 撰寫 Github Action ###
+在 Github 上的 Actions 去新增一個 Action，填入以下內容：
+{{< codeblock ".github/workflows/main.yml" ".github/workflows/main.yml" "http://underscorejs.org/#compact" ".github/workflows/main.yml" >}}
+# This is a basic workflow to help you get started with Actions
+
+name: Hugo Build and Deploy
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      # Runs a single command using the runners shell
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: 'latest'
+          extended: true
+        #run: echo Hello, world!
+
+      - uses: actions/cache@v2
+        with:
+          path: /tmp/hugo_cache
+          key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
+          restore-keys: |
+            ${{ runner.os }}-hugomod-
+      
+      # Runs a set of commands using the runners shell
+      - name: Build
+        run: hugo --minify
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+{{< /codeblock >}}
+
+Github Action 在 Deploy 時會幫你建立 gh-pages 並把產生於 ./public 的靜態網站 commit 上去。設定完成後，可以看看 run 的結果調整。
+
+最後不要忘記到  repository 的設定裡面把 Github Pages 功能打開並對應到 gh-pages 的 branch。
+
+如果上述步驟都成功，你應該可以連線到 httos:// < username > .github.io 去看看自己的成果。
