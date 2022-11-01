@@ -32,7 +32,7 @@ canonifyurls = true
 
 [author]
   name = "Mikimoto Chuang"
-  bio = "Super bio with markdown support **COOL**"
+  bio = "一個漫遊塵世小書僮，不為五斗米折腰，但六斗就行"
   job = "Senior iOS/Backend/IoT Engineer"
   location = "Taiwan"
   # Your Gravatar email. Overwrite `author.picture` everywhere in the blog
