@@ -1,25 +1,13 @@
 ---
-title: Ubuntu autofs 設定筆記
 slug: ubuntu-autofs-configuration
-date: 2020-11-06
-categories:
-- Ubuntu
-- Linux
-tags:
-- autofs
-- automount
-keywords:
-- Ubuntu
-- Linux
-- Server
-- NAS
-- autofs
-- automount
-- nfs
+title: Ubuntu autofs 設定筆記
+authors: [mikimoto]
+tags: [linux, system, ubuntu]
 ---
 
 每次爬完漫畫，都要手動用 rsync 同步到 NAS 上，一直找不到機會好好設定這個自動化流程。
-<!--more-->
+
+<!-- truncate -->
 
 <!-- toc -->
 
@@ -30,9 +18,9 @@ keywords:
 /mnt    /etc/auto.nas --timeout 60 --ghost
 ```
 
-新增 /etc/auto.nas 加上這一行
+新增 /etc/auto.nas 加上這一行，xxx 換成你的 NAS IP
 ```
-*       -fstype=nfs,soft,intr,rsize=32768,wsize=32768,nosuid,tcp 192.168.168.220:/volume1/ebook
+*       -fstype=nfs,soft,intr,rsize=32768,wsize=32768,nosuid,tcp xxx.xxx.xxx.xxx:/volume1/ebook
 ```
 
 打完收工，記得設定完重新開機或重啟服務

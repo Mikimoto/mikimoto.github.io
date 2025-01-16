@@ -1,21 +1,15 @@
 ---
-title: 控制 UIScrollView 的快速捲動的減速速度
 slug: uiscrollview-decelerationrate-study
-date: 2020-11-03
-categories:
-- iOS
-- UIKit
-tags:
-- iOS
-- UIScrollView
-keywords:
-- iOS
-- UIKit
-- UIScrollView
+title: 控制 UIScrollView 的快速捲動的減速速度
+authors: [mikimoto]
+tags: [apple, ios, uikit]
 ---
 
 負責的 APP 因為優化過了 UITableView 的捲動，捲動順暢了，但是連帶的使用者操作反而會常觸發快速捲動模式。
-<!--more-->
+
+<!-- truncate -->
+
+<!-- toc -->
 
 如果覺得快速捲動過程中，滾動速度過快，一滑就溜出去很遠。而且最糟糕的是在快速捲動時，使用者要操作時會因為動畫而有延遲的現象。一開始的想法是去找有沒有可以把快速捲動模式取消的方法，可是好像沒法控制 UIScrollView 的快速捲動。
 

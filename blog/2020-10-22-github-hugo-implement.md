@@ -1,22 +1,13 @@
 ---
+slug: github-hugo-implement
 title: 部署到 Github 上的 Hugo Blog 紀錄
-slug: github-hugo
-date: 2020-10-22
-categories:
-- 筆記(Note)
-- 實作紀錄(Implement)
-tags:
-- 實作紀錄
-keywords:
-- github
-- hugo
-- blog
-thumbnailImagePosition: left
-thumbnailImage: //d1u9biwaxjngwg.cloudfront.net/chinese-test-post/vintage-140.jpg
+authors: [mikimoto]
+tags: [github, blog]
 ---
 
 想要找的地方把自己的 Note 整理一下，既然是工程師當然要善用工程師社交網站 Github 來放 Blog。Hugo 好像比 Hexo 來多人使用，佈景主題也比較齊全，所以就有了這篇動手建立的實作紀錄。
-<!--more-->
+
+<!-- truncate -->
 
 <!-- toc -->
 
@@ -63,7 +54,7 @@ rsync -avh static ../../../
 cd <your site>
 hugo new
 ```
-開啟一篇新文章，或是在 <your site name>/content/post 目錄，新增 Markdown 檔案。
+開啟一篇新文章，或是在 [your site name]/content/post 目錄，新增 Markdown 檔案。
 
 ## 本機端測試 ##
 你可以用以下指令：
@@ -75,8 +66,8 @@ hugo server
 
 ## 部署到 Github ##
 Github 支援使用每一個帳號有一個專屬的 Github Page，部署到 Github 上有兩種方式：
-* User/Organization Pages (https://<USERNAME|ORGANIZATION>.github.io/)
-* Project Pages (https://<USERNAME|ORGANIZATION>.github.io/<PROJECT>/)
+* User/Organization Pages (https://[USERNAME or ORGANIZATION].github.io/)
+* Project Pages (https://[USERNAME orORGANIZATION].github.io/[PROJECT]/)
 
 我們以 User Pages 的方式說明:
 
@@ -87,7 +78,9 @@ p.s. 你的 theme 如果是 clone 來的，建議另外用 submodule 掛上去
 
 ### 撰寫 Github Action ###
 在 Github 上的 Actions 去新增一個 Action，填入以下內容：
+```
 {{< codeblock ".github/workflows/main.yml" ".github/workflows/main.yml" "http://underscorejs.org/#compact" ".github/workflows/main.yml" >}}
+
 # This is a basic workflow to help you get started with Actions
 
 name: Hugo Build and Deploy
@@ -140,6 +133,7 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
 {{< /codeblock >}}
+```
 
 Github Action 在 Deploy 時會幫你建立 gh-pages 並把產生於 ./public 的靜態網站 commit 上去。設定完成後，可以看看 run 的結果調整。
 

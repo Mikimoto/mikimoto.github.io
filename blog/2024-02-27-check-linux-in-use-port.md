@@ -1,23 +1,13 @@
 ---
-title: How do I check if a port is in use on Linux?
 slug: check-linux-in-use-port
-date: 2024-02-27
-categories:
-- Ubuntu
-- Linux
-tags:
-- port
-- shell
-keywords:
-- Ubuntu
-- Linux
-- Server
-- Port
-- Shell
+title: How do I check if a port is in use on Linux?
+authors: [mikimoto]
+tags: [linux, system]
 ---
 
-常常有時候要查 Linux 使用 port 的狀況，來確定 service 是否正常，就還要用 man 去查參數，寫篇文紀錄一下
-<!--more-->
+常常有時候要查 Linux 使用 port 的狀況，來確定 service 是否正常，就還要用 man 去查參數，寫篇文紀錄一下。
+
+<!-- truncate -->
 
 <!-- toc -->
 
@@ -103,7 +93,7 @@ Outputs:
 
 ## Use nc command 來檢查 TCP or UDP port is used
 
-Try the nc command as follows to scan the open ports (TCP/22 {ssh port}) of a specified host (10.8.0.1):
+Try the nc command as follows to scan the open ports (TCP/22 ssh port) of a specified host (10.8.0.1):
 
 ```bash
 nc -v -z <ip_address> <port>
@@ -121,4 +111,3 @@ Connection to 10.8.0.1 22 port [tcp/ssh] succeeded!
 ```Shell
 nc: connect to 10.8.0.1 port 23 (tcp) failed: Connection refused
 ```
-

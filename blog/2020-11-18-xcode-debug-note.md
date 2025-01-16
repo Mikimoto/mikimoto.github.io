@@ -1,21 +1,13 @@
 ---
-title: Xcode debug 筆記
 slug: xcode-debug-note
-date: 2020-11-18
-categories:
-- Xcode
-tags:
-- xcode
-- debug
-- develop
-keywords:
-- Xcode
-- Debug
-- Developer
+title: Xcode debug 筆記
+authors: [mikimoto]
+tags: [xcode, debug, development]
 ---
 
 紀錄一下自己常用的 Xcode debug 設定與 keyword，以免忘記。
-<!--more-->
+
+<!-- truncate -->
 
 <!-- toc -->
 

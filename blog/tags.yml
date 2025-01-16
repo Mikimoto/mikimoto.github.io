@@ -1,0 +1,90 @@
+apple:
+  label: Apple
+  permalink: /apple
+  description: Apple 電腦生態系相關文章
+
+macos:
+  label: MacOS  
+  permalink: /macos 
+  description: MacOS tag description
+
+ios:
+  label: iOS
+  permalink: /ios
+  description: iOS tag description
+
+xcode:
+  label: Xcode
+  permalink: /xcode
+  description: Xcode tag description
+
+debug:
+  label: Debug
+  permalink: /debug
+  description: Debug tag description
+
+development:
+  label: Development
+  permalink: /development
+  description: Development tag description
+
+swift:
+  label: Swift
+  permalink: /swift
+  description: Swift tag description
+
+uikit:
+  label: UIKit
+  permalink: /uikit
+  description: UIKit tag description
+
+system:
+  label: System
+  permalink: /system
+  description: System tag description
+
+driver:
+  label: Driver
+  permalink: /driver
+  description: Driver tag description
+
+restore:
+  label: Restore
+  permalink: /restore
+  description: Restore tag description
+
+backup:
+  label: Backup
+  permalink: /backup
+  description: Backup tag description
+
+security:
+  label: Security
+  permalink: /security
+  description: Security tag description
+
+github:
+  label: GitHub
+  permalink: /github
+  description: GitHub tag description
+
+blog:
+  label: Blog
+  permalink: /blog
+  description: Blog tag description
+
+git:
+  label: Git
+  permalink: /git
+  description: Git tag description
+
+
+ubuntu:
+  label: Ubuntu
+  permalink: /ubuntu
+  description: Ubuntu tag description
+
+linux:
+  label: Linux
+  permalink: /linux
+  description: Linux tag description

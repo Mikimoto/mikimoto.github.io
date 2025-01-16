@@ -1,26 +1,13 @@
 ---
+slug: apple-dtk-restore
 title: Apple DTK Restore 筆記
-slug: apple-dtk-restore-note
-date: 2020-11-20
-categories:
-- Apple
-- System
-- Restore
-tags:
-- restore
-- backup
-- m1
-- apple-dtk
-keywords:
-- Apple
-- DTK
-- Restore
-- System
-- Backup
+authors: [mikimoto]
+tags: [apple, system, restore, backup]
 ---
 
 紀錄一下自己設定 Apple DTK mini 的工作環境。
-<!--more-->
+
+<!-- truncate -->
 
 <!-- toc -->
 
