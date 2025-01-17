@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://mikimoto.github.io/en/blog</id>
-    <title>Mikimoto 技術部落格 Blog</title>
+    <title>Mikimoto 軟體開發筆記 Blog</title>
     <updated>2024-02-27T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://mikimoto.github.io/en/blog"/>
-    <subtitle>Mikimoto 技術部落格 Blog</subtitle>
+    <subtitle>Mikimoto 軟體開發筆記 Blog</subtitle>
     <icon>https://mikimoto.github.io/en/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[How do I check if a port is in use on Linux?]]></title>
