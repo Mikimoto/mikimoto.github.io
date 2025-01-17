@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmikimoto_github_io=self.webpackChunkmikimoto_github_io||[]).push([[4583],{8198:(i,t,o)=>{o.r(t),o.d(t,{default:()=>n});o(8774);var u=o(4586),e=(o(1107),o(6347));var s=o(4848);function n(){const{siteConfig:i}=(0,u.A)();return(0,s.jsx)(e.rd,{to:"/blog/"})}}}]);
