@@ -121,7 +121,7 @@ const themeConfig = {
     appId: "62V3DAJBGW",
     // Public API key: it is safe to commit it
     apiKey: "36a77a3cc012183aa155b09bee973f1f",
-    indexName: "blogDoc",
+    indexName: "mikimotoio",
     // Optional: see doc section below
     contextualSearch: true,
     // Optional: Specify domains where the navigation should occur through window.location instead on history.push. Useful when our Algolia config crawls multiple documentation sites and we want to navigate with window.location.href to them.
