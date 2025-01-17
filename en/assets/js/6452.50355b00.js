@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmikimoto_github_io=self.webpackChunkmikimoto_github_io||[]).push([[6452],{4071:(e,i,t)=>{t.d(i,{createPacketServices:()=>k.$});var k=t(1609);t(9369)}}]);

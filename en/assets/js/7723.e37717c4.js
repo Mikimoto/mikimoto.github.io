@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmikimoto_github_io=self.webpackChunkmikimoto_github_io||[]).push([[7723],{7723:(i,e,t)=>{t.d(e,{createPieServices:()=>k.f});var k=t(8685);t(9369)}}]);

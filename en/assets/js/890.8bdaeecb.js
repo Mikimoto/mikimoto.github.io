@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmikimoto_github_io=self.webpackChunkmikimoto_github_io||[]).push([[890],{890:(i,e,o)=>{o.d(e,{createInfoServices:()=>t.v});var t=o(7021);o(9369)}}]);
