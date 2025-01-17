@@ -5,6 +5,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Heading from '@theme/Heading';
+import {Redirect} from '@docusaurus/router';
 
 import styles from './index.module.css';
 
@@ -31,14 +32,15 @@ function HomepageHeader() {
 
 export default function Home(): ReactNode {
   const {siteConfig} = useDocusaurusContext();
-  return (
-    <Layout
-      title={`${siteConfig.title}`}
-      description="${siteConfig.tagline}">
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
-    </Layout>
-  );
+  // return (
+  //   <Layout
+  //     title={`${siteConfig.title}`}
+  //     description="${siteConfig.tagline}">
+  //     <HomepageHeader />
+  //     <main>
+  //       <HomepageFeatures />
+  //     </main>
+  //   </Layout>
+  // );
+  return <Redirect to="/blog/" />;
 }
