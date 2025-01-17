@@ -1,6 +1,16 @@
 {
-  "name": "blog",
-  "version": "0.0.0",
+  "name": "mikimoto.github.io",
+  "author": {
+    "name": "Mikimoto",
+    "url": "https://github.com/mikimoto",
+    "email": "mikimoto.c@gmail.com"
+  },
+  "repository": {
+    "url": "https://github.com/mikimoto/mikimoto.github.io",
+    "type": "git"
+  },
+  "homepage": "https://mikimoto.github.io",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",

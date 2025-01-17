@@ -63,16 +63,16 @@ const config: Config = {
   ],
 
     // An array of tags that will be inserted in the HTML <head>
-    // headTags: [
-    //   {
-    //     tagName: "link",
-    //     attributes: {
-    //       rel: "shortcut icon",
-    //       href: "img/favicon.ico",
-    //       type: "image/x-icon",
-    //     },
-    //   },
-    // ],
+    headTags: [
+      {
+        tagName: "link",
+        attributes: {
+          rel: "shortcut icon",
+          href: "img/favicon.ico",
+          type: "image/x-icon",
+        },
+      },
+    ],
 };
 
 export default config;
