@@ -8,7 +8,7 @@ import themeConfig from './config/themeConfig';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Mikimoto 技術部落格',
+  title: 'Mikimoto 軟體開發筆記',
   tagline: '任何足夠先進的技術都等同於魔術',
   favicon: 'img/favicon.ico',
 

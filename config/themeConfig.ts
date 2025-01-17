@@ -13,7 +13,7 @@ const themeConfig = {
 //   },
   // * Navbar
   navbar: {
-    title: 'Mikimoto 技術部落格',
+    title: 'Mikimoto 軟體開發筆記',
     logo: {
       alt: 'My Site Logo',
       src: 'img/logo.svg',
