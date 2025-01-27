@@ -78,6 +78,15 @@ git:
   permalink: /git
   description: Git tag description
 
+cplusplus:
+  label: C++
+  permalink: /cplusplus
+  description: C++ tag description
+
+cmake:
+  label: CMake
+  permalink: /cmake
+  description: CMake tag description
 
 ubuntu:
   label: Ubuntu
@@ -88,3 +97,8 @@ linux:
   label: Linux
   permalink: /linux
   description: Linux tag description
+
+unix:
+  label: Unix
+  permalink: /unix
+  description: Unix tag description

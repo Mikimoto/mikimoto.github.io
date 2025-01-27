@@ -34,7 +34,16 @@ const presets: PresetConfig[] = [
         showLastUpdateTime: false,
         feedOptions: {
           type: ['rss', 'atom'],
+          copyright: `Copyright © ${new Date().getFullYear()} Mikimoto.`,
           xslt: true,
+          createFeedItems: async (params) => {
+            const {blogPosts, defaultCreateFeedItems, ...rest} = params;
+            return defaultCreateFeedItems({
+              // keep only the 10 most recent blog posts in the feed
+              blogPosts: blogPosts.filter((item, index) => index < 10),
+              ...rest,
+            });
+          },
         },
         onInlineTags: 'warn',
         onInlineAuthors: 'warn',
