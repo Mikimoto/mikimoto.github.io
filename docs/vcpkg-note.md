@@ -9,7 +9,7 @@ last_update:
 
 ## Vcpkg 的安裝與使用筆記 ##
 
-### Vcpkg 的安裝 ###
+### 安裝 ###
 
 1. 將 [Vcpkg](https://github.com/microsoft/vcpkg) 的程式碼 clone 到你準備的目錄下（不需要放在專案內，可以多數專案共用）
    
@@ -25,7 +25,7 @@ last_update:
 
    這一步會在目錄下產生一個 vcpkg 的執行 script，用於 vcpkg 的安裝、查詢等工具，但與 CMake 整合之後，不會直接用到這個工具。
 
-### Vcpkg 整合進 CMake ###
+### 整合進 CMake ###
 
 1. 在目錄下新增檔案 CMakeUserPresets.cmake，並在裡面加入下列內容:
 
@@ -91,3 +91,7 @@ last_update:
    ```
 
    Makefile 會自動產生在 build 目錄下，然後就可以編譯了。
+
+### 其他 ### 
+
+ - vcpkg 安裝的套件會在 build 目錄下的 vcpkg_installed 目錄下。
