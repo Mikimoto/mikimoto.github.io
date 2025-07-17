@@ -33,6 +33,32 @@
         <category label="CMake" term="CMake"/>
     </entry>
     <entry>
+        <title type="html"><![CDATA[macOS App Debug Menu]]></title>
+        <id>https://mikimoto.github.io/blog/mac-app-debug-menu</id>
+        <link href="https://mikimoto.github.io/blog/mac-app-debug-menu"/>
+        <updated>2024-05-22T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[In this article, we'll explore a few lesser-known macOS AppKit debug tools that can help you better understand your app's behavior and troubleshoot issues.]]></summary>
+        <content type="html"><![CDATA[<p>In this article, we'll explore a few lesser-known macOS AppKit debug tools that can help you better understand your app's behavior and troubleshoot issues.</p>
+<p>AppKit includes a private category on NSApplication that adds _eventFirstResponderChainDescription — a string describing the current responder chain. This can be a really useful debugging tool!</p>
+<p>You can also set the _NS_4445425547 user default to see a Cocoa debug menu. I tend to just leave this enabled in my apps.</p>
+<p>print(NSApp.value(forKey: "_eventFirstResponderChainDescription"))
+defaults write -g _NS_4445425547 -bool true</p>
+<p>And in case anyone’s wondering what the 4445425547 means:</p>
+<p>0x44 = d
+0x45 = e
+0x42 = b
+0x55 = u
+0x47 = g</p>
+<p>This HUD can be activated by calling the private CARenderServerSetDebugOption function.</p>]]></content>
+        <author>
+            <name>Mikimoto</name>
+            <uri>https://mikimoto.github.io</uri>
+        </author>
+        <category label="MacOS" term="MacOS"/>
+        <category label="app" term="app"/>
+        <category label="Debug" term="Debug"/>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[How do I check if a port is in use on Linux?]]></title>
         <id>https://mikimoto.github.io/blog/check-linux-in-use-port</id>
         <link href="https://mikimoto.github.io/blog/check-linux-in-use-port"/>
