@@ -39,7 +39,10 @@ export default defineConfig({
         { icon: 'x.com', label: 'X', href: 'https://x.com/mikimoto' },
         { icon: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/in/mikimotochuang/' },
       ],
-      sidebar: [{ label: '筆記', items: [{ autogenerate: { directory: 'docs' } }] }],
+      sidebar: [
+        { label: '筆記', items: [{ autogenerate: { directory: 'docs' } }] },
+        { label: '關於我', link: '/about/' },
+      ],
       components: { Footer: './src/components/Footer.astro' },
       plugins: [
         starlightBlog({
