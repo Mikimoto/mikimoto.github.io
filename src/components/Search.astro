@@ -21,17 +21,20 @@ const links = [
     display: flex;
     gap: 1rem;
   }
-  /* 跟 starlight-blog 原本的 header 連結一樣：窄螢幕時隱藏，改用側欄 */
+  /* 窄螢幕時隱藏，改用側欄 */
   .header-links {
     display: none;
     gap: 1rem;
   }
   @media (min-width: 50rem) {
-    .header-links {
-      display: flex;
-    }
     .search-with-links :global(button[data-open-modal]) {
       white-space: nowrap;
+    }
+  }
+  /* 比這窄時 header 放不下，會把右邊的主題切換鈕擠出畫面 */
+  @media (min-width: 60rem) {
+    .header-links {
+      display: flex;
     }
   }
   /* 預設搜尋按鈕只有約 7rem 寬，螢幕夠寬時放寬一倍；太窄會把右邊的按鈕擠出畫面 */
