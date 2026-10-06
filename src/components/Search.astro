@@ -30,6 +30,15 @@ const links = [
     .header-links {
       display: flex;
     }
+    .search-with-links :global(button[data-open-modal]) {
+      white-space: nowrap;
+    }
+  }
+  /* 預設搜尋按鈕只有約 7rem 寬，螢幕夠寬時放寬一倍；太窄會把右邊的按鈕擠出畫面 */
+  @media (min-width: 64rem) {
+    .search-with-links :global(button[data-open-modal]) {
+      width: 14rem;
+    }
   }
   .header-links a {
     color: var(--sl-color-text-accent);
