@@ -43,10 +43,11 @@ export default defineConfig({
         { label: '筆記', items: [{ autogenerate: { directory: 'docs' } }] },
         { label: '關於我', link: '/about/' },
       ],
-      components: { Footer: './src/components/Footer.astro' },
+      components: { Footer: './src/components/Footer.astro', Search: './src/components/Search.astro' },
       plugins: [
         starlightBlog({
           title: '部落格',
+          navigation: 'none', // 部落格連結改由 src/components/Search.astro 顯示
           postCount: 10,
           recentPostCount: 10,
           metrics: { readingTime: true },

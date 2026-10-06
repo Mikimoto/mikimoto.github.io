@@ -1,0 +1,40 @@
+---
+import Default from '@astrojs/starlight/components/Search.astro'
+
+const links = [
+  { label: '部落格', href: '/blog/' },
+  { label: '筆記', href: '/docs/' },
+  { label: '關於我', href: '/about/' },
+]
+---
+
+<div class="search-with-links">
+  <Default><slot /></Default>
+  <nav class="header-links">
+    {links.map((link) => <a href={link.href}>{link.label}</a>)}
+  </nav>
+</div>
+
+<style>
+  .search-with-links {
+    align-items: center;
+    display: flex;
+    gap: 1rem;
+  }
+  /* 跟 starlight-blog 原本的 header 連結一樣：窄螢幕時隱藏，改用側欄 */
+  .header-links {
+    display: none;
+    gap: 1rem;
+  }
+  @media (min-width: 50rem) {
+    .header-links {
+      display: flex;
+    }
+  }
+  .header-links a {
+    color: var(--sl-color-text-accent);
+    font-weight: 600;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+</style>
