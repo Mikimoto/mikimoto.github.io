@@ -33,3 +33,7 @@ yarn-error.log*
 *.pdf
 .vscode
 
+
+# Astro
+dist
+.astro

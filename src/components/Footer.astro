@@ -1,0 +1,32 @@
+---
+import Default from '@astrojs/starlight/components/Footer.astro'
+
+const links = [
+  { label: '筆記', href: '/docs/' },
+  { label: '部落格', href: '/blog/' },
+  { label: '文章彙整', href: '/archive/' },
+  { label: 'Stack Overflow', href: 'https://stackoverflow.com/questions/tagged/docusaurus' },
+  { label: 'MOPCON Youtube Channel', href: 'https://www.youtube.com/@MopconOrg/playlists' },
+]
+---
+
+<Default />
+<nav class="site-links">
+  {links.map((link) => <a href={link.href}>{link.label}</a>)}
+</nav>
+<p class="copyright">Copyright © {new Date().getFullYear()} Mikimoto.</p>
+
+<style>
+  .site-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+    font-size: var(--sl-text-sm);
+  }
+  .copyright {
+    margin-top: 0.5rem;
+    font-size: var(--sl-text-xs);
+    color: var(--sl-color-gray-3);
+  }
+</style>

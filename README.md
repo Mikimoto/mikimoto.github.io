@@ -1,41 +1,14 @@
 # Website
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+用 [Astro](https://astro.build/) + [Starlight](https://starlight.astro.build/) + [starlight-blog](https://github.com/HiDeoo/starlight-blog) 建置。
 
-### Installation
-
-```
-$ yarn
-```
-
-### Local Development
+- 部落格文章：`src/content/docs/blog/`
+- 筆記：`src/content/docs/docs/`
 
 ```
-$ yarn start
+yarn          # 安裝
+yarn dev      # 本機預覽 http://localhost:4321
+yarn build    # 輸出到 dist/
 ```
 
-This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
-
-### Build
-
-```
-$ yarn build
-```
-
-This command generates static content into the `build` directory and can be served using any static contents hosting service.
-
-### Deployment
-
-Using SSH:
-
-```
-$ USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```
-$ GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+push 到 `master` 後，GitHub Actions 會 build 並部署到 `gh-pages` 分支。

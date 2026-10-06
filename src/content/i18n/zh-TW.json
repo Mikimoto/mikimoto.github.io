@@ -1,0 +1,19 @@
+{
+  "starlightBlog.authors.count_other": "{{author}} 的 {{count}} 篇文章",
+  "starlightBlog.metrics.readingTime.minutes": " · 閱讀時間約 {{count}} 分鐘",
+  "starlightBlog.metrics.words_other": " · {{count}} 字",
+  "starlightBlog.pagination.prev": "較新的文章",
+  "starlightBlog.pagination.next": "較舊的文章",
+  "starlightBlog.post.date": "{{date, datetime(dateStyle: medium)}}",
+  "starlightBlog.post.lastUpdate": " · 最後更新：<time datetime=\"{{isoDate}}\">{{date, datetime(dateStyle: medium)}}</time>",
+  "starlightBlog.post.draft": "草稿",
+  "starlightBlog.post.featured": "精選",
+  "starlightBlog.post.tags": "標籤：",
+  "starlightBlog.sidebar.all": "所有文章",
+  "starlightBlog.sidebar.featured": "精選文章",
+  "starlightBlog.sidebar.recent": "最新文章",
+  "starlightBlog.sidebar.tags": "標籤",
+  "starlightBlog.sidebar.authors": "作者",
+  "starlightBlog.sidebar.rss": "RSS",
+  "starlightBlog.tags.count_other": "{{count}} 篇標籤為「{{tag}}」的文章"
+}

@@ -1,0 +1,26 @@
+---
+import { getCollection } from 'astro:content'
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro'
+
+// 對應 Docusaurus 的 /blog/archive：依年份列出所有文章
+const posts = (await getCollection('docs', ({ id }) => id.startsWith('blog/')))
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+const years = Map.groupBy(posts, (post) => post.data.date.getFullYear())
+---
+
+<StarlightPage frontmatter={{ title: '文章彙整', tableOfContents: false }}>
+  {
+    [...years].map(([year, items]) => (
+      <>
+        <h2>{year}</h2>
+        <ul>
+          {items.map((post) => (
+            <li>
+              {post.data.date.toISOString().slice(5, 10)} <a href={`/${post.id}/`}>{post.data.title}</a>
+            </li>
+          ))}
+        </ul>
+      </>
+    ))
+  }
+</StarlightPage>
