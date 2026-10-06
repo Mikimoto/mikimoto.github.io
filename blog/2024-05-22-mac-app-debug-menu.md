@@ -2,7 +2,7 @@
 slug: mac-app-debug-menu
 title: macOS App Debug Menu
 authors: [mikimoto]
-tags: [macos, app, debug]
+tags: [apple, macos, debug]
 ---
 
 In this article, we'll explore a few lesser-known macOS AppKit debug tools that can help you better understand your app's behavior and troubleshoot issues.

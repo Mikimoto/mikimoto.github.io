@@ -25,7 +25,6 @@ const config: Config = {
   deploymentBranch: 'gh-pages',
 
   onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
 
   presets,
   plugins,
@@ -45,6 +44,9 @@ const config: Config = {
   themes: ["@docusaurus/theme-mermaid", "@docusaurus/theme-live-codeblock"],
   markdown: {
     mermaid: true,
+    hooks: {
+      onBrokenMarkdownLinks: 'warn',
+    },
   },
 
     // Enabling math equations

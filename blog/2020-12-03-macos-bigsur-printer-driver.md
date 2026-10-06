@@ -2,7 +2,7 @@
 slug: macos-bigsur-printer-driver
 title: HP 印表機在 Mac OX Big Sur 上無法運作
 authors: [mikimoto]
-tags: [apple, system, macos, driver]
+tags: [apple, macos, driver]
 ---
 
 紀錄一下在 Mac OS Big Sur 上遇到舊 HP Printer(CM1312nfi) 驅動程式無法運作的問題。

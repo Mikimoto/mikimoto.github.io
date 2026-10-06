@@ -2,7 +2,7 @@
 slug: ubuntu-autofs-configuration
 title: Ubuntu autofs 設定筆記
 authors: [mikimoto]
-tags: [linux, system, ubuntu]
+tags: [linux, ubuntu, system]
 ---
 
 每次爬完漫畫，都要手動用 rsync 同步到 NAS 上，一直找不到機會好好設定這個自動化流程。

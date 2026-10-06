@@ -2,7 +2,7 @@
 slug: git-auto-commit-tool
 title: git 透過 AI 產生 commit message 的自動提交工具
 authors: [mikimoto]
-tags: [git]
+tags: [git, ai, shell]
 ---
 
 最近看到龍哥開發的小工具，因為自己也很想要，所以不如就自己動動手，寫了一個純 Shell script 的小工具。

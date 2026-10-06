@@ -1,104 +1,99 @@
 apple:
   label: Apple
   permalink: /apple
-  description: Apple 電腦生態系相關文章
+  description: Apple 生態系相關文章
 
 macos:
-  label: MacOS  
-  permalink: /macos 
-  description: MacOS tag description
+  label: macOS
+  permalink: /macos
+  description: macOS 系統設定、App 開發與疑難排解
 
 ios:
   label: iOS
   permalink: /ios
-  description: iOS tag description
+  description: iOS App 開發筆記
 
 xcode:
   label: Xcode
   permalink: /xcode
-  description: Xcode tag description
-
-debug:
-  label: Debug
-  permalink: /debug
-  description: Debug tag description
-
-development:
-  label: Development
-  permalink: /development
-  description: Development tag description
-
-swift:
-  label: Swift
-  permalink: /swift
-  description: Swift tag description
+  description: Xcode 使用技巧與設定
 
 uikit:
   label: UIKit
   permalink: /uikit
-  description: UIKit tag description
+  description: UIKit 元件的研究與實作
 
-system:
-  label: System
-  permalink: /system
-  description: System tag description
+debug:
+  label: Debug
+  permalink: /debug
+  description: 除錯工具與技巧
 
 driver:
   label: Driver
   permalink: /driver
-  description: Driver tag description
+  description: 驅動程式相關問題
 
 restore:
   label: Restore
   permalink: /restore
-  description: Restore tag description
+  description: 系統還原
 
 backup:
   label: Backup
   permalink: /backup
-  description: Backup tag description
-
-security:
-  label: Security
-  permalink: /security
-  description: Security tag description
-
-github:
-  label: GitHub
-  permalink: /github
-  description: GitHub tag description
-
-blog:
-  label: Blog
-  permalink: /blog
-  description: Blog tag description
-
-git:
-  label: Git
-  permalink: /git
-  description: Git tag description
-
-cplusplus:
-  label: C++
-  permalink: /cplusplus
-  description: C++ tag description
-
-cmake:
-  label: CMake
-  permalink: /cmake
-  description: CMake tag description
-
-ubuntu:
-  label: Ubuntu
-  permalink: /ubuntu
-  description: Ubuntu tag description
+  description: 資料與系統備份
 
 linux:
   label: Linux
   permalink: /linux
-  description: Linux tag description
+  description: Linux 系統操作與設定
 
-unix:
-  label: Unix
-  permalink: /unix
-  description: Unix tag description
+ubuntu:
+  label: Ubuntu
+  permalink: /ubuntu
+  description: Ubuntu 系統設定
+
+system:
+  label: System
+  permalink: /system
+  description: 作業系統管理與設定
+
+neovim:
+  label: Neovim
+  permalink: /neovim
+  description: Neovim 編輯器設定
+
+git:
+  label: Git
+  permalink: /git
+  description: Git 版本控制工具與技巧
+
+github:
+  label: GitHub
+  permalink: /github
+  description: GitHub 服務與 GitHub Pages
+
+blog:
+  label: Blog
+  permalink: /blog
+  description: 架設部落格的紀錄
+
+shell:
+  label: Shell
+  permalink: /shell
+  description: Shell script 與命令列工具
+
+ai:
+  label: AI
+  permalink: /ai
+  description: 用 AI 輔助開發
+
+cplusplus:
+  label: C++
+  permalink: /cplusplus
+  description: C++ 開發筆記
+
+cmake:
+  label: CMake
+  permalink: /cmake
+  description: CMake 建置設定

@@ -2,7 +2,7 @@
 slug: nvim-setting
 title: NeoVim + LazyVim 設定筆記
 authors: [mikimoto]
-tags: [macos, system]
+tags: [macos, neovim]
 ---
 
 紀錄一下自己的 NeoVim + LazyVim 設定筆記。

@@ -2,7 +2,7 @@
 slug: xcode-debug-note
 title: Xcode debug 筆記
 authors: [mikimoto]
-tags: [xcode, debug, development]
+tags: [apple, xcode, debug]
 ---
 
 紀錄一下自己常用的 Xcode debug 設定與 keyword，以免忘記。
